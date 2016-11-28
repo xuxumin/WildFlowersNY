@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/pageBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="68dp">
+
+            <TextView
+                android:text="Cardinal Flower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="25dp"
+                android:gravity="right"
+                android:layout_marginLeft="80dp" />
+
+            <TextView
+                android:text="(Lobelia Cardinalis)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textSize="18sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/cardinal1"
+                android:id="@+id/cardinal_flower1"
+                android:layout_weight="0.44" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/cardinal2"
+                android:id="@+id/cardinal_flower2"
+                android:layout_weight="0.44" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/cardinal3"
+                android:id="@+id/cardinal_flower3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="343dp"
+            android:layout_weight="0.44"
+            android:background="@color/whiteBackground"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="265dp"
+                android:layout_weight="0.58">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="273dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Family: Bluebell, Campanulaceae"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView10"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginLeft="12dp" />
+
+                    <TextView
+                        android:text="Flowering Season: Mid-July through August"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView9"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginLeft="12dp" />
+
+                    <TextView
+                        android:text='Flowers: Scarlet, several to many in a showy, slender terminal cluster, about 1.25" (3.1cm) long, tubular at the base, with 5 unequal spreading petal-like divisions.'
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView8"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginLeft="12dp" />
+
+                    <TextView
+                        android:text="Plant: 2-4.5' (0.6-1.4m) tall; leaves alternate, simple, lance-shaped, margin toothed, green"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView7"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginLeft="12dp" />
+
+                    <TextView
+                        android:text="Habitat: Moist meadows, swamps, and edges of large bodies of water."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView6"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginLeft="12dp"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/cardinal_flower_homeimage"
+                    android:id="@+id/imageView12"
+                    android:layout_weight="1"
+                    android:layout_marginTop="40dp" />
+            </LinearLayout>
+
+            <TextView
+                android:text="Notes: Poisonous parts, toxic only if eaten in large quantities."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_weight="0.12"
+                android:layout_marginLeft="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

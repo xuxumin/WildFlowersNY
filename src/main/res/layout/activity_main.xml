@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pageBackground"
+    tools:context="com.xuxumin.nywildflowers.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <SearchView
+        android:layout_width="380dp"
+        android:layout_height="37dp"
+        android:background="@drawable/search_bar_border"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="10dp" >
+
+    </SearchView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/home_image"
+        android:id="@+id/home_image"
+        android:layout_marginTop="120dp" />
+
+</LinearLayout>

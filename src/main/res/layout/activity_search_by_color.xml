@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_search_by_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.xuxumin.nywildflowers.SearchByColor"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:layout_weight="0.23">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ColorWhiteBtn"
+            android:background="@drawable/color_button"
+            android:backgroundTint="@android:color/white"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="60dp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ColorGreenBtn"
+            android:background="@drawable/color_button"
+            android:backgroundTint="@android:color/holo_green_light"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="60dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        android:layout_weight="0.12">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ColorRedBtn"
+            android:background="@drawable/color_button"
+            android:backgroundTint="@android:color/holo_red_light"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="60dp"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ColorYellowBtn"
+            android:background="@drawable/color_button"
+            android:backgroundTint="@android:color/holo_orange_light"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="60dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:layout_weight="0.12">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ColorPurpleBtn"
+            android:background="@drawable/color_button"
+            android:backgroundTint="@android:color/holo_purple"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="60dp"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/ColorBrownBtn"
+            android:background="@drawable/color_button"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="60dp"/>
+    </LinearLayout>
+</LinearLayout>

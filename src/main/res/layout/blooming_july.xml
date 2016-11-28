@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBackground">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="@color/pageBackground">
+
+        <SearchView
+            android:layout_height="37dp"
+            android:background="@drawable/search_bar_border"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="380dp">
+
+        </SearchView>
+
+        <TextView
+            android:text="Showing Results For: Blooming in July"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:id="@+id/textView"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/pageBackground">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp"
+                android:onClick="bloomingJulyClickToCardinalFlowerInfoScreen">
+
+                <TextView
+                    android:text="Cardinal Flower (Lobella Cardinals)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_cardinal_flower"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_cardinal_flower"
+                    android:id="@+id/imageview_cardinal_flower" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Black Knapweed (Centaurea Nigra)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_black_knapweed"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_black_knapweed"
+                    android:id="@+id/imageview_black_knapweed" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Beach-pea (Lathyrus Japonicus)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_beach_pea"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_beach_pea"
+                    android:id="@+id/imageview_beack_pea" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Crown Vetch (Coronilla Varia)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_crown_vetch"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_crown_vetch"
+                    android:id="@+id/imageview_crown_vetch" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Deptford Pink (Dlanthus Armeria)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_deptford_pink"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_deptford_pink"
+                    android:id="@+id/imageview_deptford_pink" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Everlasting-pea (Lathyrus Latifolius)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_everlasting_pea"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_everlasting_pea"
+                    android:id="@+id/imageview_everlasting_pea" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Field Scabious (Knautla Arvensis)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_field_scabious"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_field_scabious"
+                    android:id="@+id/imageview_field_scabious" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Fireweed (Epiloblurn Augustifolium)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_fireweed"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_fireweed"
+                    android:id="@+id/imageview_fireweed" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Grass Pink (Calopogon Tuberosus)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_grass_pink"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_grass_pink"
+                    android:id="@+id/imageview_grass_pink" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Great Hairy Willow-Herb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_great_hairy"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_great_hairy"
+                    android:id="@+id/imageview_great_hairy" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Herb Robert (Geranlum Robertlanum)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_herb_robert"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_herb_robert"
+                    android:id="@+id/imageview_herb_robert" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Indian Paintbrush (Castilleja Coccinea)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_indian_paintbrush"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_indian_paintbrush"
+                    android:id="@+id/imageview_indian_paintbrush" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Musk Mallow (Malva Moschata)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_musk_mallow"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_musk_mallow"
+                    android:id="@+id/imageview_musk_mallow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Pinesap (Monotropa Hypopithys)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_pinesap"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_pinesap"
+                    android:id="@+id/imageview_pinesap" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Pink Pyrola (Pyrola Asarifolia)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_pink_pyrola"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_pink_pyrola"
+                    android:id="@+id/imageview_pink_pyrola" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Purple Chinquefoll (Potentilla Palustris)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_purple_chinquefoll"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_purple_chinquefoll"
+                    android:id="@+id/imageview_purple_chinquefoll" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Purple-flowering Raspberry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_purple_flowering_raspberry"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_purple_flowering_raspberry"
+                    android:id="@+id/imageview_purple_flowering_raspberry" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Red Clover (Trifolium Pratense)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_red_clover"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_red_clover"
+                    android:id="@+id/imageview_red_clover" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Rose Mallow (Hibiscus Moscheutos)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_rose_mallow"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_rose_mallow"
+                    android:id="@+id/imageview_rose_mallow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Rose Pogonia (Pogonia Ophioglossoides)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_rose_pogonia"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_rose_pogonia"
+                    android:id="@+id/imageview_rose_pogonia" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Sheep Laurel (Kalmia Angustifolla)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_sheep_laurel"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_sheep_laurel"
+                    android:id="@+id/imageview_sheep_laurel" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Spreading Dogbane"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_spreading_dogbane"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_spreading_dogbane"
+                    android:id="@+id/imageview_spreading_dogbane" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Summer Phlox (Phlox Paniculata)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_summer_phlox"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_summer_phlox"
+                    android:id="@+id/imageview_summer_phlox" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Trumpet Creeper (Campsis Radicans)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_trumpet_creeper"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_trumpet_creeper"
+                    android:id="@+id/imageview_trumpet_creeper" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Twinflower (Linnaea Borealis)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_twinflower"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_twinflower"
+                    android:id="@+id/imageview_twinflower" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Wild Basil (Clinopodium Vulgare)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_wild_basil"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_wild_basil"
+                    android:id="@+id/imageview_wild_basil" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Sea-beach Rose (Rosa Rugosa)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_sea_beach"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/july_sea_beach_rose"
+                    android:id="@+id/imageview_sea_beach" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

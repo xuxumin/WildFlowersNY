@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Wild Flowers</string>
+    <string name="action_search">Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_MyCollection">My Collection</string>
+    <string name="action_SearchByColor">Search By Color</string>
+    <string name="action_FlowerLocator">Flower Locator</string>
+    <string name="action_BloomingNow">Blooming Now</string>
+</resources>

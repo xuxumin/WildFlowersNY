@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_blooming_now"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xuxumin.nywildflowers.BloomingNow"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/pageBackground">
+
+            <Button
+                android:text="now"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/bloomingNowBtn"
+                android:layout_height="60dp"
+                android:layout_width="320dp"
+                android:background="@drawable/blooming_btn_style"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:text="january"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/bloomingJanBtn"
+                android:textAllCaps="false"
+                android:background="@drawable/blooming_month_btn_style"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="febuary"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/bloomingFebBtn"
+                android:background="@drawable/blooming_month_btn_style"
+                android:textAllCaps="false"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="march"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/bloomingMarBtn"
+                android:background="@drawable/blooming_month_btn_style"
+                android:textAllCaps="false"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="april"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/bloomingAprBtn"
+                android:background="@drawable/blooming_month_btn_style"
+                android:textAllCaps="false"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="may"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/bloomingMayBtn"
+                android:background="@drawable/blooming_month_btn_style"
+                android:textAllCaps="false"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="june"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/bloomingJunBtn"
+                android:background="@drawable/blooming_month_btn_style"
+                android:textAllCaps="false"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="july"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/bloomingJulBtn"
+                android:background="@drawable/blooming_month_btn_style"
+                android:textAllCaps="false"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="10dp"
+                android:onClick="julyBtnClicktoJulyPage" />
+
+            <Button
+                android:text="august"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/bloomingAugBtn"
+                android:background="@drawable/blooming_month_btn_style"
+                android:textAllCaps="false"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="september"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/bloomingSepBtn"
+                android:background="@drawable/blooming_month_btn_style"
+                android:textAllCaps="false"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="october"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/bloomingOctBtn"
+                android:background="@drawable/blooming_month_btn_style"
+                android:textAllCaps="false"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="november"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/bloomingNov"
+                android:background="@drawable/blooming_month_btn_style"
+                android:textAllCaps="false"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="10dp" />
+
+            <Button
+                android:text="december"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:id="@+id/bloomingDecBtn"
+                android:background="@drawable/blooming_month_btn_style"
+                android:textAllCaps="false"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_marginBottom="30dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

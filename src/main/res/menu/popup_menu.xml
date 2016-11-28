@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_MyCollection"
+        android:title="@string/action_MyCollection"
+        android:onClick="menuClickToMyCollection"/>
+
+    <item
+        android:id="@+id/action_SearchByColor"
+        android:title="@string/action_SearchByColor"
+        android:onClick="menuClickToSearchByColor"/>
+
+    <item
+        android:id="@+id/action_FlowerLocator"
+        android:title="@string/action_FlowerLocator"
+        android:onClick="menuClickToFlowerLocator"/>
+
+    <item
+        android:id="@+id/action_BloomingNow"
+        android:title="@string/action_BloomingNow"
+        android:onClick="menuClickToBloomingNow"/>
+
+    <item
+        android:title="Home"
+        android:id="@+id/action_home"
+        android:onClick="menuClickToHome"/>
+
+    <item android:title="Sign Out"
+        android:id="@+id/action_signout" />
+
+</menu>
