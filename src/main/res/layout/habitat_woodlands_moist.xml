@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/pageBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:background="@color/pageBackground">
+
+        <SearchView
+            android:layout_height="37dp"
+            android:background="@drawable/search_bar_border"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="380dp">
+
+        </SearchView>
+
+        <TextView
+            android:text="Showing Results For: Moist Woodlands"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:id="@+id/textView"
+            android:gravity="center_vertical|center_horizontal" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/pageBackground">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp"
+                android:onClick="woodlandMoistClickToToadInfoScreen">
+
+                <TextView
+                    android:text="Toad Shade (Trillium Sessile)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_toad_shade"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/moist_toad_shade"
+                    android:id="@+id/imageview_toad_shade" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Dame's Rocket (Hesperis Matronalis)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_dames_rocket"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/moist_dames_rocket"
+                    android:id="@+id/imageview_dames_rocket" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Daphne (Daphne Mezereum)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_daphne"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/moist_daphne"
+                    android:id="@+id/imageview_daphne" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Pink Pyrola (Pyrola Asarifolia)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_pink_pyrola1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/moist_pink_pyrola"
+                    android:id="@+id/imageview_pink_pyrola1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Wild Geranium (Geranium Maculatum)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_wild_geranium"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/moist_wild_geranium"
+                    android:id="@+id/imageview_wild_geranium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Herb Robert (Geranium Robertainum)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_herb_robert1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/moist_herb_robert"
+                    android:id="@+id/imageview_herb_robert1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Twisted Stalk (Streptopus Roseus)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_twisted_stalk"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/moist_twisted_stalk"
+                    android:id="@+id/imageview_twisted_stalk" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Pinesap (Monotropa Hypopithys)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_pinesap1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/moist_pinesap"
+                    android:id="@+id/imageview_pinesap1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Showy Orchis (Potentilla Palutris)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_showy_orchis"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/moist_showy_orchis"
+                    android:id="@+id/imageview_showy_orchis" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Fringed Polygala (Polygala Paucifolia)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_fringed_polygala"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/moist_fringed_polygala"
+                    android:id="@+id/imageview_fringed_polygala" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Wild Basil (Clinopodium Vulgare)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_wild_basil1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/moist_wild_basil"
+                    android:id="@+id/imageview_wild_basil1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Trumpet Creeper (Campsis Radicans)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_trumpet_creeper1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/moist_trumpet_creeper"
+                    android:id="@+id/imageview_trumpet_creeper1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/listBackground"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Glaucous Honeysuckle (Lonicera Dioica)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textview_glaucous_honeysuckle"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="25dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/moist_glaucous"
+                    android:id="@+id/imageview_glaucous_honeysuckle" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

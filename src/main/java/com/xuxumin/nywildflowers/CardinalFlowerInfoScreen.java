@@ -78,7 +78,10 @@ public class CardinalFlowerInfoScreen extends AppCompatActivity {
         startActivity(intentForBloomingNow);
     }
 
-
+    public void clickImageToImageScreen (View view){
+        Intent intentForImageToImageScreen = new Intent(this, CardinalFlowerImageScreen.class);
+        startActivity(intentForImageToImageScreen);
+    }
 
 }
 

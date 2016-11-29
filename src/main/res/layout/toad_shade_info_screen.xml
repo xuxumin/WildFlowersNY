@@ -21,7 +21,7 @@
             android:layout_height="68dp">
 
             <TextView
-                android:text="Cardinal Flower"
+                android:text="Toad Shade"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2"
@@ -32,7 +32,7 @@
                 android:layout_marginLeft="80dp" />
 
             <TextView
-                android:text="(Lobelia Cardinalis)"
+                android:text="(Trillium Sessile)"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView4"
@@ -46,27 +46,31 @@
             android:layout_width="match_parent"
             android:layout_height="165dp"
             android:weightSum="1"
-            android:onClick="clickImageToImageScreen">
+            android:onClick="clickImageToToadImageScreen">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/cardinal1"
+                app:srcCompat="@drawable/toad1"
                 android:id="@+id/cardinal_flower1"
-                android:layout_weight="0.44" />
+                android:layout_weight="0.33"
+                android:layout_marginTop="20dp" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/cardinal2"
+                app:srcCompat="@drawable/toad2"
                 android:id="@+id/cardinal_flower2"
-                android:layout_weight="0.44" />
+                android:layout_weight="0.37"
+                android:layout_marginTop="20dp" />
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/cardinal3"
-                android:id="@+id/cardinal_flower3" />
+                app:srcCompat="@drawable/toad3"
+                android:id="@+id/cardinal_flower3"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.22" />
         </LinearLayout>
 
         <LinearLayout
@@ -89,7 +93,7 @@
                     android:layout_height="match_parent">
 
                     <TextView
-                        android:text="Family: Bluebell, Campanulaceae"
+                        android:text="Family: Liliaceae"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView10"
@@ -97,7 +101,7 @@
                         android:layout_marginLeft="12dp" />
 
                     <TextView
-                        android:text="Flowering Season: Mid-July through August"
+                        android:text="Flowering Season: Mid-to late May"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView9"
@@ -105,7 +109,7 @@
                         android:layout_marginLeft="12dp" />
 
                     <TextView
-                        android:text='Flowers: Scarlet, several to many in a showy, slender terminal cluster, about 1.25" (3.1cm) long, tubular at the base, with 5 unequal spreading petal-like divisions.'
+                        android:text='Flowers: Maroon or occasionally green-ish-yellow, solitary, stalkless, about 2" (5cm) tall, with 3 erect, narrowly lance-shaped petals.'
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView8"
@@ -113,7 +117,7 @@
                         android:layout_marginLeft="12dp" />
 
                     <TextView
-                        android:text="Plant: 2-4.5' (0.6-1.4m) tall; leaves alternate, simple, lance-shaped, margin toothed, green"
+                        android:text='Plant: 4-12" (10-30cm) tall; leaves 3, in a whorl at the base of the flower, simple, ovate with an entire margin, stalkless, dark green often mottled with lighter green.'
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView7"
@@ -121,7 +125,7 @@
                         android:layout_marginLeft="12dp" />
 
                     <TextView
-                        android:text="Habitat: Moist meadows, swamps, and edges of large bodies of water."
+                        android:text="Habitat: Moist Woodlands."
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:id="@+id/textView6"
@@ -131,16 +135,15 @@
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="wrap_content"
+                    android:layout_width="131dp"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/cardinal_flower_homeimage"
+                    app:srcCompat="@drawable/toad_flower_homeimage"
                     android:id="@+id/imageView12"
-                    android:layout_weight="1"
-                    android:layout_marginTop="40dp" />
+                    android:layout_marginTop="50dp" />
             </LinearLayout>
 
             <TextView
-                android:text="Notes: Poisonous parts, toxic only if eaten in large quantities."
+                android:text="Notes: Protected-Endangered - Do not disturb. Only Found in western regions of New York."
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView3"

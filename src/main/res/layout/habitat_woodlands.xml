@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/pageBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="176dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/woodlandbackground"
+                android:id="@+id/imageView6" />
+
+            <TextView
+                android:text="Woodlands"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/woodland_title"
+                android:textColor="@color/whiteBackground"
+                android:textSize="24sp"
+                android:gravity="center_vertical|center_horizontal" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="217dp">
+
+                <RelativeLayout
+                    android:layout_width="206dp"
+                    android:layout_height="match_parent"
+                    android:onClick="clickToHabitatWoodlandsMoist">
+
+                    <ImageView
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/locator_moist1"
+                        android:id="@+id/imageView9"
+                        android:layout_width="150dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="Moist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView12"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical|center_horizontal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="206dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/locator_sandy1"
+                        android:id="@+id/imageView10"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="Sandy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView13"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical|center_horizontal" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="206dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/locator_open1"
+                        android:id="@+id/imageView11"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="Open"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView14"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical|center_horizontal" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/locator_mountainous1"
+                        android:id="@+id/imageView13"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:text="Mountainous"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView15"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical|center_horizontal" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

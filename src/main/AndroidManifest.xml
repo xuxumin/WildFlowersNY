@@ -21,6 +21,11 @@
         <activity android:name=".MyCollection"></activity>
         <activity android:name=".BloomingJuly"></activity>
         <activity android:name=".CardinalFlowerInfoScreen"></activity>
+        <activity android:name=".CardinalFlowerImageScreen"></activity>
+        <activity android:name=".FlowerLocatorHabitatWoodlands"></activity>
+        <activity android:name=".FlowerLocatorHabitatWoodlandsMoist"></activity>
+        <activity android:name=".ToadShadeInfoScreen"></activity>
+        <activity android:name=".ToadShadeImageScreen"></activity>
     </application>
 
 </manifest>

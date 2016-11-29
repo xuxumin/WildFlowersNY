@@ -1,17 +1,16 @@
 package com.xuxumin.nywildflowers;
 
 import android.content.Intent;
-import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
-public class MainActivity extends AppCompatActivity {
+public class ToadShadeImageScreen extends AppCompatActivity {
 
     private Toolbar toolbar;
     private ImageButton menu_icon;
@@ -19,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.toad_shade_image_screen);
 
         toolbar = (Toolbar) findViewById(R.id.app_bar);
 
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //create the instance of popupMenu
-                PopupMenu popup = new PopupMenu(MainActivity.this, menu_icon);
+                PopupMenu popup = new PopupMenu(ToadShadeImageScreen.this, menu_icon);
                 //inflating the Popup using xml file
                 popup.getMenuInflater().inflate(R.menu.popup_menu, popup.getMenu());
 
@@ -40,13 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 popup.show(); //showing popup menu
             }
         });
-
     }
 
-    /*
-        11/14/20116 Xumin
-        intent for the item in menu My Collection
-     */
     public void menuClickToMyCollection (MenuItem menuItem){
         Intent intentForMyCollection = new Intent(this, MyCollection.class);
         startActivity(intentForMyCollection);
@@ -70,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentForFlowerLocator);
     }
 
+    public void menuClickToHome (MenuItem menuItem){
+        Intent intentForHomeNow = new Intent(this, MainActivity.class);
+        startActivity(intentForHomeNow);
+    }
+
     /*
         11/14/20116 Xumin
         intent for the item in menu Blooming Now
@@ -79,10 +78,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intentForBloomingNow);
     }
 
-    public void menuClickToHome (MenuItem menuItem){
-        Intent intentForHomeNow = new Intent(this, MainActivity.class);
-        startActivity(intentForHomeNow);
+    public void clickImageToImageScreen (View view){
+        Intent intentForImageToImageScreen = new Intent(this, CardinalFlowerImageScreen.class);
+        startActivity(intentForImageToImageScreen);
     }
 
-
 }
+
+

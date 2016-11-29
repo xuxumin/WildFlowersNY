@@ -20,7 +20,7 @@
             android:layout_height="68dp">
 
             <TextView
-                android:text="Cardinal Flower"
+                android:text="Toad Shade"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2"
@@ -31,7 +31,7 @@
                 android:layout_marginLeft="80dp" />
 
             <TextView
-                android:text="(Lobelia Cardinalis)"
+                android:text="(Trillium Sessile)"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView4"
@@ -57,25 +57,24 @@
 
                     <ImageView
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/cardinal_image1"
+                        app:srcCompat="@drawable/toad_image1"
                         android:id="@+id/imageView"
-                        android:layout_width="400dp" />
+                        android:layout_width="414dp" />
 
                     <ImageView
                         android:layout_width="400dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/cardinal_image2"
+                        app:srcCompat="@drawable/toad_image2"
                         android:id="@+id/imageView2"
                         android:layout_weight="1.13" />
 
                     <ImageView
                         android:layout_width="400dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/cardinal_image3"
+                        app:srcCompat="@drawable/toad_image3"
                         android:id="@+id/imageView3"
                         android:layout_weight="2.13"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="20dp" />
+                        android:layout_gravity="center" />
                 </LinearLayout>
             </HorizontalScrollView>
         </LinearLayout>
