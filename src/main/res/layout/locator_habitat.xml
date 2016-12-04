@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_weight="0.13"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="0.11"
+                    android:onClick="clickToHabitatWoodlands">
+
+                    <ImageView
+                        app:srcCompat="@drawable/habitat_woodlands"
+                        android:id="@+id/imageView_woodlands"
+                        android:layout_weight="0.11"
+                        android:layout_height="120dp"
+                        android:layout_width="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true" />
+
+                    <TextView
+                        android:text="Woodlands"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_woodlands"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="0.11">
+
+                    <ImageView
+                        app:srcCompat="@drawable/habitat_fileds"
+                        android:id="@+id/imageView_fields"
+                        android:layout_weight="0.11"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentStart="false"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true" />
+
+                    <TextView
+                        android:text="Fields"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_field"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="0.11">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_roadsides"
+                        android:id="@+id/imageView_roadsides"
+                        android:layout_weight="0.11"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true" />
+
+                    <TextView
+                        android:text="Roadsides"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_roadsides"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_weight="0.13"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="0.14">
+
+                    <ImageView
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_wasteareas"
+                        android:id="@+id/imageView_wasteareas"
+                        android:layout_weight="0.14"
+                        android:layout_width="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:text="Waste Areas"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_wasteareas"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="0.14">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_bogs"
+                        android:id="@+id/imageView_bogs"
+                        android:layout_weight="0.12"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:text="Bogs"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_bogs"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="0.14">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_swamps"
+                        android:id="@+id/imageView_swamps"
+                        android:layout_weight="0.14"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:text="Swamps"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_swamps"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_fens"
+                        android:id="@+id/imageView_fens"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:text="Fens"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_fens"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_meadows"
+                        android:id="@+id/imageView_meadows"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:text="Meadows"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_meadows"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_burned_disturbed"
+                        android:id="@+id/imageView_burned_disturbed"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:text="Burned"
+                            android:textColor="@color/whiteBackground"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView_burned_disturbed"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:text="+"
+                            android:textColor="@color/whiteBackground"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView16"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:text="Disturbed"
+                            android:textColor="@color/whiteBackground"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView17"
+                            android:gravity="center" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_thickets"
+                        android:id="@+id/imageView_thickets"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:text="Thickets"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_thickets"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_clearings"
+                        android:id="@+id/imageView_clearings"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:text="Clearings"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_clearings"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_marshes"
+                        android:id="@+id/imageView_marshes"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:text="Marshes"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_marshes"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_nearwater"
+                        android:id="@+id/imageView_nearwater"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:text="Near Water"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_nearwater"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_mountains"
+                        android:id="@+id/imageView_mountains"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:text="Mountains"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_mountains"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_sanddunes"
+                        android:id="@+id/imageView_sanddunes"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:text="Sand Dunes"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_sanddunes"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.13"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_cutivatedland"
+                        android:id="@+id/imageView_cutivatedland"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:text="Cultivated"
+                            android:textColor="@color/whiteBackground"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView_cutivated"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:text="Land"
+                            android:textColor="@color/whiteBackground"
+                            android:textSize="18sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView_land"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_hedgerows"
+                        android:id="@+id/imageView_hedgerows"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:text="Hedgerows"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_hedgerows"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/habitat_woodlots"
+                        android:id="@+id/imageView_woodlots"
+                        android:layout_weight="1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="true"/>
+
+                    <TextView
+                        android:text="Woodlots"
+                        android:textColor="@color/whiteBackground"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_woodlots"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

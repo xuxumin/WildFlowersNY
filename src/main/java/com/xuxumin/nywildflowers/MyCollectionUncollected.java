@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class FlowerLocator extends AppCompatActivity {
+public class MyCollectionUncollected extends AppCompatActivity {
 
     private Toolbar toolbar;
     private ImageButton menu_icon;
@@ -17,7 +17,7 @@ public class FlowerLocator extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flower_locator);
+        setContentView(R.layout.my_collection_uncollected);
 
         toolbar = (Toolbar) findViewById(R.id.app_bar);
 
@@ -29,7 +29,7 @@ public class FlowerLocator extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //create the instance of popupMenu
-                PopupMenu popup = new PopupMenu(FlowerLocator.this, menu_icon);
+                PopupMenu popup = new PopupMenu(MyCollectionUncollected.this, menu_icon);
                 //inflating the Popup using xml file
                 popup.getMenuInflater().inflate(R.menu.popup_menu, popup.getMenu());
 
@@ -77,14 +77,19 @@ public class FlowerLocator extends AppCompatActivity {
         startActivity(intentForBloomingNow);
     }
 
-    public void clickToHabitat (View view){
-        Intent intentForHabitat = new Intent(this, FlowerLocatorHabitat.class);
-        startActivity(intentForHabitat);
+    public void clickToMyCollection (View view){
+        Intent intentForMyCollection = new Intent(this, MyCollection.class);
+        startActivity(intentForMyCollection);
     }
 
-    public void clickToFindTrails (View view){
-        Intent intentForFindTrails = new Intent(this, FlowerLocatorFindTrails.class);
-        startActivity(intentForFindTrails);
+    public void clickToCollectionList (View view){
+        Intent intentForCollectionListt = new Intent(this, MyCollectionList.class);
+        startActivity(intentForCollectionListt);
+    }
+
+    public void clickToCollectionCollected (View view){
+        Intent intentForCollectionCollected = new Intent(this, MyCollectionCollected.class);
+        startActivity(intentForCollectionCollected);
     }
 
 }

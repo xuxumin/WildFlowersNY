@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/pageBackground"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/collection_head"
+                android:id="@+id/imageView4"
+                android:layout_marginTop="15dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:text="Jade Mitchell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:textColor="@color/textDarkColor"
+                    android:textSize="23sp"
+                    android:layout_weight="1"
+                    android:gravity="right" />
+
+                <TextView
+                    android:text=" (@jmitch08)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/textDarkColor"
+                    android:textSize="18sp"
+                    android:id="@+id/textView18"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="260dp"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_unselected_image"
+                        android:id="@+id/imageView8"
+                        android:layout_weight="1"
+                        android:onClick="clickToMyCollection" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_unselected_list"
+                        android:id="@+id/imageView14"
+                        android:layout_weight="1"
+                        android:onClick="clickToCollectionList" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_selected_search"
+                        android:id="@+id/imageView15"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_unselected_location"
+                        android:id="@+id/imageView17"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:text="collected/"
+                            android:layout_width="209dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/whiteBackground"
+                            android:id="@+id/textView5"
+                            android:gravity="right"
+                            android:onClick="clickToCollectionCollected" />
+
+                        <TextView
+                            android:text="uncollected"
+                            android:layout_width="207dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView19" />
+                    </LinearLayout>
+
+                    <SearchView
+                        android:layout_height="41dp"
+                        android:background="@drawable/search_bar_border"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="350dp">
+
+                    </SearchView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/pageBackground">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp" >
+
+                    <TextView
+                        android:text="Beechdrops"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_pitcher"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Epifagus Virginiana)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_sarracenia"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_uncollected_icon"
+                        android:id="@+id/imageView1"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Cypress Spurge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_rose"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Euphorbia Cyparissias)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_hibiscus"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_uncollected_icon"
+                        android:id="@+id/imageView2"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Fringed Gentian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_daphne"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Gentianpsis Crinita)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_mezereum"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_uncollected_icon"
+                        android:id="@+id/imageView3"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Bluets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_basil"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Houstonia Caerulea)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_clinopodium"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_uncollected_icon"
+                        android:id="@+id/imageView5"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Wild Lupine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_geranium"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Lupinus Perennis)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_maculatum"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_uncollected_icon"
+                        android:id="@+id/imageView6"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Yarrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_herb"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Achillea Millefolium)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_robertianum"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_uncollected_icon"
+                        android:id="@+id/imageView7"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Sweet-Pepper-Bush"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_sea_pink"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Clethra Alnifolia)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_stellaris"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_uncollected_icon"
+                        android:id="@+id/imageView9"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="White Campion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_Pinesap"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Silene Latifolia)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_hypopithys"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_uncollected_icon"
+                        android:id="@+id/imageView10"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Biennial Gaura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_glaucous"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Gaura Biennis)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_lonicera"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_uncollected_icon"
+                        android:id="@+id/imageView11"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Buttonbush"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_fringed"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Cephalanthus Occidentails)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_polygala"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_uncollected_icon"
+                        android:id="@+id/imageView12"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Boneset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_twisted"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Eupatorium Perfoliatum)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_streptopus"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_uncollected_icon"
+                        android:id="@+id/imageView13"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

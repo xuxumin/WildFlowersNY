@@ -6,4 +6,5 @@
     <color name="whiteBackground">#FFF</color>
     <color name="pageBackground">#ebeceb</color>
     <color name="listBackground">#D4D4D4</color>
+    <color name="textDarkColor">#7C7B7B</color>
 </resources>

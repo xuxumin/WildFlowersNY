@@ -8,6 +8,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,13 +24,19 @@
         <activity android:name=".BloomingNow"></activity>
         <activity android:name=".FlowerLocator"></activity>
         <activity android:name=".MyCollection"></activity>
+        <activity android:name=".MyCollectionList"></activity>
+        <activity android:name=".MyCollectionCollected"></activity>
+        <activity android:name=".MyCollectionUncollected"></activity>
         <activity android:name=".BloomingJuly"></activity>
         <activity android:name=".CardinalFlowerInfoScreen"></activity>
         <activity android:name=".CardinalFlowerImageScreen"></activity>
+        <activity android:name=".FlowerLocatorHabitat"></activity>
         <activity android:name=".FlowerLocatorHabitatWoodlands"></activity>
         <activity android:name=".FlowerLocatorHabitatWoodlandsMoist"></activity>
         <activity android:name=".ToadShadeInfoScreen"></activity>
         <activity android:name=".ToadShadeImageScreen"></activity>
+        <activity android:name=".FlowerLocatorFindTrails"></activity>
+        
     </application>
 
 </manifest>
