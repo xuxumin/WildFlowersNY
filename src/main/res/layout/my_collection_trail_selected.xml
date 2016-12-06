@@ -101,6 +101,37 @@
                         android:id="@+id/imageView17"
                         android:layout_weight="0.36" />
                 </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_trail_icon"
+                        android:id="@+id/imageView36"
+                        android:layout_marginLeft="50dp" />
+
+                    <TextView
+                        android:text="Rutland Trail"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/textView21"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginLeft="10dp" />
+
+                    <TextView
+                        android:text="(St. Lawrence County, NY)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView22"
+                        android:gravity="left|center"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="normal|italic" />
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
@@ -123,7 +154,7 @@
                     android:layout_marginTop="5dp" >
 
                     <TextView
-                        android:text="Allegheng River Trail"
+                        android:text="Wild Lupine"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:id="@+id/textview_pitcher"
@@ -131,7 +162,7 @@
                         android:paddingLeft="25dp" />
 
                     <TextView
-                        android:text="(Allegheny, NY)"
+                        android:text="(Lupinus Perennis)"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:id="@+id/textView_sarracenia"
@@ -140,194 +171,13 @@
                         android:textStyle="normal|italic"
                         android:layout_marginLeft="5dp" />
 
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="42dp"
-                    android:background="@color/listBackground"
-                    android:layout_marginTop="5dp">
-
-                    <TextView
-                        android:text="Catskill Scenic Trail"
+                    <ImageView
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textview_rose"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="25dp" />
-
-                    <TextView
-                        android:text="(Grand Gorge, NY)"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textView_hibiscus"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:textStyle="normal|italic"
-                        android:layout_marginLeft="5dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="42dp"
-                    android:background="@color/listBackground"
-                    android:layout_marginTop="5dp">
-
-                    <TextView
-                        android:text="Dutchess Rail Trail"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textview_daphne"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="25dp" />
-
-                    <TextView
-                        android:text="(Pougheepsie, NY)"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textView_mezereum"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:textStyle="normal|italic"
-                        android:layout_marginLeft="5dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="42dp"
-                    android:background="@color/listBackground"
-                    android:layout_marginTop="5dp">
-
-                    <TextView
-                        android:text="High Line"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textview_basil"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="25dp" />
-
-                    <TextView
-                        android:text="(Manhattan, NY)"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textView_clinopodium"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:textStyle="normal|italic"
-                        android:layout_marginLeft="5dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="42dp"
-                    android:background="@color/listBackground"
-                    android:layout_marginTop="5dp">
-
-                    <TextView
-                        android:text="Hudson Valley Rail Trail"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textview_geranium"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="25dp" />
-
-                    <TextView
-                        android:text="(Lloyd, NY)"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textView_maculatum"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:textStyle="normal|italic"
-                        android:layout_marginLeft="5dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="42dp"
-                    android:background="@color/listBackground"
-                    android:layout_marginTop="5dp">
-
-                    <TextView
-                        android:text="North Country Trailway"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textview_herb"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="25dp" />
-
-                    <TextView
-                        android:text="(Westchester, NY)"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textView_robertianum"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:textStyle="normal|italic"
-                        android:layout_marginLeft="5dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="42dp"
-                    android:background="@color/listBackground"
-                    android:layout_marginTop="5dp">
-
-                    <TextView
-                        android:text="Orange Heritage Trailway"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textview_sea_pink"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="25dp" />
-
-                    <TextView
-                        android:text="(Orange County, NY)"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textView_stellaris"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:textStyle="normal|italic"
-                        android:layout_marginLeft="5dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="match_parent"
-                    android:layout_height="42dp"
-                    android:background="@color/listBackground"
-                    android:layout_marginTop="5dp">
-
-                    <TextView
-                        android:text="Putman County Trailway"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textview_Pinesap"
-                        android:gravity="center_vertical"
-                        android:paddingLeft="25dp" />
-
-                    <TextView
-                        android:text="(Putman County, NY)"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:id="@+id/textView_hypopithys"
-                        android:layout_weight="1"
-                        android:gravity="center_vertical"
-                        android:textStyle="normal|italic"
-                        android:layout_marginLeft="5dp" />
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_list_flower_icon"
+                        android:id="@+id/imageView1"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
 
                 </LinearLayout>
 
@@ -337,25 +187,33 @@
                     android:layout_height="42dp"
                     android:background="@color/listBackground"
                     android:layout_marginTop="5dp"
-                    android:onClick="clickToCollectionTrailSelected">
+                    android:onClick="clickToMyCollectionHerbRobert">
 
                     <TextView
-                        android:text="Rutland Trail"
+                        android:text="Herb Robert"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:id="@+id/textview_glaucous"
+                        android:id="@+id/textview_1"
                         android:gravity="center_vertical"
                         android:paddingLeft="25dp" />
 
                     <TextView
-                        android:text="(St. Lawrence County, NY)"
+                        android:text="(Geranium Robertianum)"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:id="@+id/textView_lonicera"
+                        android:id="@+id/textView_2"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
                         android:textStyle="normal|italic"
                         android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_list_flower_icon"
+                        android:id="@+id/imageView2"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
 
                 </LinearLayout>
 
@@ -367,22 +225,30 @@
                     android:layout_marginTop="5dp">
 
                     <TextView
-                        android:text="South County Trailway"
+                        android:text="Glaucous Honeysuckle"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:id="@+id/textview_fringed"
+                        android:id="@+id/textview_3"
                         android:gravity="center_vertical"
                         android:paddingLeft="25dp" />
 
                     <TextView
-                        android:text="(Westchester County, NY)"
+                        android:text="(Lonicera Dioica)"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:id="@+id/textView_polygala"
+                        android:id="@+id/textView_4"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
                         android:textStyle="normal|italic"
                         android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_list_flower_icon"
+                        android:id="@+id/imageView3"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
 
                 </LinearLayout>
 
@@ -394,22 +260,30 @@
                     android:layout_marginTop="5dp">
 
                     <TextView
-                        android:text="Walden-Wallkill Rail Trail"
+                        android:text="Glaucous Honeysuckle"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:id="@+id/textview_twisted"
+                        android:id="@+id/textview_5"
                         android:gravity="center_vertical"
                         android:paddingLeft="25dp" />
 
                     <TextView
-                        android:text="(Orange County, NY)"
+                        android:text="(Lonicera Dioica)"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:id="@+id/textView_streptopus"
+                        android:id="@+id/textView_6"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
                         android:textStyle="normal|italic"
                         android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_list_flower_icon"
+                        android:id="@+id/imageView5"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
 
                 </LinearLayout>
 
@@ -421,22 +295,345 @@
                     android:layout_marginTop="5dp">
 
                     <TextView
-                        android:text="Wilkinson Memorial Trail"
+                        android:text="Pink Pyrola"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:id="@+id/textview_forever"
+                        android:id="@+id/textview_7"
                         android:gravity="center_vertical"
                         android:paddingLeft="25dp" />
 
                     <TextView
-                        android:text="(Beacon, NY)"
+                        android:text="(Pyrola Asarifolia)"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:id="@+id/textView_sedum"
+                        android:id="@+id/textView_8"
                         android:layout_weight="1"
                         android:gravity="center_vertical"
                         android:textStyle="normal|italic"
                         android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_list_flower_icon"
+                        android:id="@+id/imageView6"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Wild Geranium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_9"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Geranium Maculatum)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_10"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_list_flower_icon"
+                        android:id="@+id/imageView7"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Pinesap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_11"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Monotropa Hypopithys)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_12"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_list_flower_icon"
+                        android:id="@+id/imageView9"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Beechdrops"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_13"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Epifagus Virginiana)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_14"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_list_flower_icon"
+                        android:id="@+id/imageView10"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Bluets"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_15"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Houstonia Caerulea)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_16"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_list_flower_icon"
+                        android:id="@+id/imageView11"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Showy Orchis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_17"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Potentilla Palustris)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_18"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_list_flower_icon"
+                        android:id="@+id/imageView12"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Fringed Polygala"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_19"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Polygala Paucifolia)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_20"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_list_flower_icon"
+                        android:id="@+id/imageView13"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Yarrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_21"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Achillea Millefolium)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_22"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_list_flower_icon"
+                        android:id="@+id/imageView16"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Wild Basil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_23"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Clinopodium Vulgare)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_24"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_list_flower_icon"
+                        android:id="@+id/imageView18"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="@color/listBackground"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:text="Dame's Rocket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textview_25"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="25dp" />
+
+                    <TextView
+                        android:text="(Hesperis Matronalis)"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textView_26"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:textStyle="normal|italic"
+                        android:layout_marginLeft="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/collection_list_flower_icon"
+                        android:id="@+id/imageView19"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginRight="10dp" />
 
                 </LinearLayout>
 

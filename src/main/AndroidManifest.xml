@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/home_image"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -27,6 +27,9 @@
         <activity android:name=".MyCollectionList"></activity>
         <activity android:name=".MyCollectionCollected"></activity>
         <activity android:name=".MyCollectionUncollected"></activity>
+        <activity android:name=".MyCollectionTrails"></activity>
+        <activity android:name=".MyCollectionTrailSelected"></activity>
+        <activity android:name=".MyCollectionHerbRobert"></activity>
         <activity android:name=".BloomingJuly"></activity>
         <activity android:name=".CardinalFlowerInfoScreen"></activity>
         <activity android:name=".CardinalFlowerImageScreen"></activity>

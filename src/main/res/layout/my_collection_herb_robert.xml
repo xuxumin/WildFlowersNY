@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_collection"
+    android:background="@color/pageBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xuxumin.nywildflowers.MyCollection"
+    android:orientation="vertical">
+
+    <include android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="1"
+            android:layout_height="75dp">
+
+            <ImageView
+                android:layout_width="93dp"
+                app:srcCompat="@drawable/collection_head"
+                android:id="@+id/imageView4"
+                android:layout_marginLeft="10dp"
+                android:layout_height="75dp" />
+
+            <TextView
+                android:text=" (@jmitch08)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/textDarkColor"
+                android:textSize="18sp"
+                android:id="@+id/textView18"
+                android:layout_weight="1"
+                android:textStyle="normal|italic"
+                android:layout_gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@color/whiteBackground"
+            android:layout_height="2dp"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <TextView
+                android:text="Herb Robert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView20"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical" />
+
+            <TextView
+                android:text="(Geranium Robertianum)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView23"
+                android:layout_weight="0.41"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/whiteBackground"></LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="362dp"
+            app:srcCompat="@drawable/my_collection_herb_robert"
+            android:id="@+id/imageView37"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/whiteBackground"></LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="0.23"
+            android:layout_height="55dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/collection_trail_icon"
+                android:id="@+id/imageView38"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_weight="0.03" />
+
+            <TextView
+                android:text="Rutland Trail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView24"
+                android:layout_weight="0.03"
+                android:textSize="20sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:text="(St. Lawrence County, NY)"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView25"
+                android:layout_weight="0.03"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical"
+                android:textStyle="normal|italic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/whiteBackground"></LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

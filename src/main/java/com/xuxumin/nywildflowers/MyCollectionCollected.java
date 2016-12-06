@@ -97,4 +97,9 @@ public class MyCollectionCollected extends AppCompatActivity {
         startActivity(intentForCollectionUncollected);
     }
 
+    public void clickToCollectionTrails (View view){
+        Intent intentForCollectionTrails = new Intent(this, MyCollectionTrails.class);
+        startActivity(intentForCollectionTrails);
+    }
+
 }

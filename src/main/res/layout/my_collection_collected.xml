@@ -96,7 +96,8 @@
                         android:layout_height="wrap_content"
                         app:srcCompat="@drawable/collection_unselected_location"
                         android:id="@+id/imageView17"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:onClick="clickToCollectionTrails" />
 
                 </LinearLayout>
 

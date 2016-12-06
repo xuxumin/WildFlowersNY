@@ -87,5 +87,10 @@ public class MyCollection extends AppCompatActivity {
         startActivity(intentForCollectionCollected);
     }
 
+    public void clickToCollectionTrails (View view){
+        Intent intentForCollectionTrails = new Intent(this, MyCollectionTrails.class);
+        startActivity(intentForCollectionTrails);
+    }
+
 }
 

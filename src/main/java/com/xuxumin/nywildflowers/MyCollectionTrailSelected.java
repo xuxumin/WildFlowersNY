@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class MyCollectionList extends AppCompatActivity {
+public class MyCollectionTrailSelected extends AppCompatActivity {
 
     private Toolbar toolbar;
     private ImageButton menu_icon;
@@ -17,7 +17,7 @@ public class MyCollectionList extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.my_collection_list);
+        setContentView(R.layout.my_collection_trail_selected);
 
         toolbar = (Toolbar) findViewById(R.id.app_bar);
 
@@ -29,7 +29,7 @@ public class MyCollectionList extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //create the instance of popupMenu
-                PopupMenu popup = new PopupMenu(MyCollectionList.this, menu_icon);
+                PopupMenu popup = new PopupMenu(MyCollectionTrailSelected.this, menu_icon);
                 //inflating the Popup using xml file
                 popup.getMenuInflater().inflate(R.menu.popup_menu, popup.getMenu());
 
@@ -87,14 +87,19 @@ public class MyCollectionList extends AppCompatActivity {
         startActivity(intentForMyCollection);
     }
 
+    public void clickToCollectionList (View view){
+        Intent intentForCollectionList = new Intent(this, MyCollectionList.class);
+        startActivity(intentForCollectionList);
+    }
+
     public void clickToCollectionCollected (View view){
         Intent intentForCollectionCollected = new Intent(this, MyCollectionCollected.class);
         startActivity(intentForCollectionCollected);
     }
 
-    public void clickToCollectionTrails (View view){
-        Intent intentForCollectionTrails = new Intent(this, MyCollectionTrails.class);
-        startActivity(intentForCollectionTrails);
+    public void clickToMyCollectionHerbRobert (View view){
+        Intent intentForMyCollectoinHerbRobert = new Intent(this, MyCollectionHerbRobert.class);
+        startActivity(intentForMyCollectoinHerbRobert);
     }
 
 }
